@@ -14,7 +14,8 @@
         padding: 1.5rem;
         font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
         line-height: 1.5;
-        max-width: 60vw;
+        max-width: 700px;
+        font-weight: 300;
 
     }
 
@@ -30,7 +31,14 @@
     }
 
     .tldr {
-        background-color: lightyellow
+        text-align: center;
+    background: #424242fa;
+    border: 1px solid #b180f0;
+    font-weight: 400;
+    border-radius: 5px;
+    color: ghostwhite;
+    padding: 1.5rem;
+    font-size: medium;
     }
 
     .card {
@@ -48,7 +56,7 @@
 
     .carda {
         padding: 1rem;
-        font-size: smaller;
+        font-size: medium;
         border: 1px solid #9033e74f;
         background: rgb(110 102 102 / 12%);
         border-bottom-right-radius: 4px;
@@ -66,6 +74,14 @@
     }
     .card_t{
         padding: 0.5rem
+    }
+
+    img {
+        max-width: 10vw;
+        max-height: 10vw;
+        min-width: 85px;
+        min-height: 85px;
+        object-fit: contain;
     }
 
     .header {
@@ -86,14 +102,15 @@
         border-radius: 5px;
     }
     .img1 {
-        max-width: 20%;
+        /* max-width: 200px;
+        max-height: 200px; */
         padding: 0.1rem;;
         margin: 1rem;
         border: 1px solid black;
         border-radius: 100%;
     }
     .img2 {
-        max-width: 20%;
+        /* max-width: 20%; */
         margin: 1rem;
         /* padding: 0.1rem; */
         border: 1px solid rgb(160, 13, 13);
@@ -101,6 +118,8 @@
     }
 
     .img3 {
+        max-width: 300px;
+        max-height: 300px;
         /* max-width: 20%; */
         margin: 1rem;
         /* padding: 0.1rem; */
@@ -114,37 +133,36 @@
         <h1>The Shape Fellowship</h1>
         <div class=flex>
             <img class=img1 src="fractal.gif" /> 
-            <img class=img2 src="circular_rna.gif" /> 
+            <img class=img2 src="crna.gif" /> 
 
             <img class=img1 src="rotate.gif" /> 
 
         <br/>
         </div>
-        <p>
+        <p class=tldr>
             The Shape Foundation is launching a fellowship to support exceptional upcoming engineers,
             researchers and founders in the biological and computer sciences.
         </p>
+        <!-- <br/> -->
         <p>
-            The upcoming inaugural cohort of fellows will be invited to San Francisco for a full 2+ week program of get
+            The upcoming inaugural cohort of fellows will be <b>invited to San Francisco for a full 2+ week program </b> of get
             togethers, lab tours, journal clubs, group dinners, hikes, daytrips and meetups with leading deep tech
             researchers, engineers and founders. In short: phenomenal vibes.
         </p>
 
         <p>
-            The exact dates and durations are still TBA but will likely be either before or after the 2022 summer break
+            The exact dates and duration are still TBA but will likely be either before or after the 2022 summer break
             so as to not clash with the usual dates for summer internships.
 
         </p>
         <p>
-            We plan to have recurring IRL events and retreats in and close to capitals around the world, depending on
-            where fellows happen to be located.
-
-        </p>
-
-        <p>
             Flights, chic housing close to Golden Gate park and a stipend to cover San Francisco expenses will be fully
-            covered by the foundation. Other than vibeweek(s), we are keen to support fellows for personal explorations, open source
-            contributions or, in some cases, company formation.
+            covered by the foundation. After vibeweek(s), we plan to continue supporting fellows financially on a project to project basis. 
+            
+            Other than that we'll continue hosting IRL events and retreats in or close to central central hubs.
+    
+            </p>
+    
         </p>
        
         <!-- <div class="card lightpurple">
@@ -158,14 +176,56 @@
         </div> -->
 
         <br/>
- 
+        <span class="header">
+            MOTIVATION
+        </span>
+        <div class=carda>
+            We created the Shape fellowship because we've seen that many <b>potentially valuable research applications and
+             tools are malnurished </b> because the academic incentives to maintain, host and making them work for more than N=1 users are not there and most projects by themselves are not venture fundable. Also most researchers that work on algorithms, libraries or other research software don't feel like creating a company or GTM strategy around them.
+             
+            We've seen this over and over again: Very Novel and potentially crucial building blocks for future scientific advance 
+            are not great businesses by themselves and neglecting them massively increases the barrier to 
+            entry for small, inital experimentations. This then leads to a large spread of (mostly very old) tools that everything relies on for basic tasks like sequence alignment.
+
+            <br/>
+            <br/>
+            In spirit, the fellowship is similar to the <a href="https://www.mercatus.org/emergent-ventures"> Emergent Ventures fellowship </a> and the <a href="https://newscience.org/summer-fellowship/"> NewScience summer program </a> but with a decided focus
+            on open source infrastructure, simulations and research software.
+            <br/>
+            <br/>
+
+            <b><i>Recommended reading:</i></b>
+
+            <p>
+
+                <a href="https://milan.cvitkovic.net/writing/market_failures_in_science/">Market Failures in Science</a>
+            </p>
+            <p>
+                <a href="https://newscience.org/how-software-in-the-life-sciences-actually-works-and-doesnt-work/"> How Software in the Life Sciences Actually Works (And Doesn’t Work) </a>
+
+            </p>
+
+            <p>
+                <a href="https://markusstrasser.org/extracting-knowledge-from-literature/"> The Business of Extracting Knowledge from Academic Publications </a>
+
+            </p>
+            <p>
+                <a href="https://benjaminreinhardt.com/notes-on-the-changing-structure-of-american-innovation"> The Changing Structure of American Innovation </a>
+
+            </p>
+            <p>
+                <a href="https://parthasarthy.com/blog/software-off-ramps"> Software Off-Ramps </a>
+
+            </p>
+        </div>
+        <br/>
 
         <span class="header">
             WHAT IS THE APPLICATION PROCESS? 
         </span>
         <div class=carda>
             We do two 30 minute video calls and one technical/brainstorming
-            session to see if a potential fellow is a fit.
+            call to see if a potential fellow is a fit.
         </div>
         <br>
 
@@ -191,14 +251,10 @@
         </div>
         <br/>
         
-        <span class="header">
-            INSPIRATIONS
-        </span>
-        <div class=carda>
-            The Shape fellowship is similar in spirit to the Emergent Ventures fellowship or NewScience but with a focus
-            on open source software infrastructure and productionizing research into openly usable applications.
-        </div>
+       
 <br/>
+<hr/>
+
 <br/>
         <div class=flex style="justify-content: space-around">
             <!-- <img class=img1 src="evolution_algo.gif" />  -->
