@@ -25,6 +25,8 @@
     .flex {
         display: flex;
         justify-content: center;
+        flex-grow: 1;
+        
     }
 
     .tldr {
@@ -75,13 +77,45 @@
         /* border-radius: 2px; */
         border-top-right-radius: 1px
     }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 5px;
+    }
+    .img1 {
+        max-width: 20%;
+        padding: 0.1rem;;
+        margin: 1rem;
+        border: 1px solid black;
+        border-radius: 100%;
+    }
+    .img2 {
+        max-width: 20%;
+        margin: 1rem;
+        /* padding: 0.1rem; */
+        border: 1px solid rgb(160, 13, 13);
+        border-radius: 100%;
+
+
+    }
 
 </style>
 
 <body>
         <h1>The Shape Fellowship</h1>
+        <div class=flex>
+            <img class=img1 src="fractal.gif" /> 
+            <img class=img2 src="circular_rna.gif" /> 
+
+            <img class=img1 src="rotate.gif" /> 
+
+        <br/>
+        </div>
         <p>
-            The Shape Foundation is launching a fellowship targeted at exceptionally ambitious and talented engineers,
+            The Shape Foundation is launching a fellowship to support exceptional upcoming engineers,
             researchers and founders in the biological and computer sciences.
         </p>
         <p>
@@ -117,27 +151,21 @@
             </div>
         </div> -->
 
-        <p>
-
-        </p>
-        <p>
-
-        </p>
+        <br/>
+ 
 
         <span class="header">
             WHAT IS THE APPLICATION PROCESS? 
         </span>
         <div class=carda>
-            There's generally two 30 minute video calls and one technical/brainstorming
+            We do two 30 minute video calls and one technical/brainstorming
             session to see if a potential fellow is a fit.
         </div>
-        <p>
+        <br>
 
-        </p>
-        <p>
-
-        </p>
-
+        <img class=center src="evolution.gif" /> 
+        <br>
+     
 
         <!-- <div class="card">
             <span class="card_h">
@@ -162,7 +190,7 @@
             INSPIRATIONS
         </span>
         <div class=carda>
-            The Shape fellowship is in spirit similar to the Emergent Ventures fellowship or NewScience but with a focus
+            The Shape fellowship is similar in spirit to the Emergent Ventures fellowship or NewScience but with a focus
             on open source software infrastructure and productionizing research into openly usable applications.
         </div>
 
